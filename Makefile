@@ -1,4 +1,4 @@
-CCC=gcc
+#CC=gcc
 NAME=libft.a
 CFLAGS=-Wall -Wextra -Werror
 SRC = 	ft_abs.c\
@@ -89,7 +89,7 @@ $(NAME): $(OBJ)
 	ar rcs $(NAME) $(OBJ)
 
 %.o: %.c
-	$(CCC) -I. -o $@ -c $? $(CFLAGS)
+	$(CC) -I. -o $@ -c $? $(CFLAGS)
 
 .PHONY: all
 all: $(NAME)
