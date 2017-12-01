@@ -6,7 +6,7 @@
 /*   By: wblondel <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/12/01 10:20:47 by wblondel     #+#   ##    ##    #+#       */
-/*   Updated: 2017/12/01 10:20:47 by wblondel    ###    #+. /#+    ###.fr     */
+/*   Updated: 2017/12/01 11:21:57 by wblondel    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -16,10 +16,8 @@
 void	*ft_memset(void *b, int c, size_t len)
 {
 	unsigned char	*p;
-	int				i;
 
 	p = b;
-	i = 0;
 	while (len > 0)
 	{
 		*p = c;
