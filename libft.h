@@ -6,7 +6,7 @@
 /*   By: wblondel <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/12/01 10:21:15 by wblondel     #+#   ##    ##    #+#       */
-/*   Updated: 2017/12/01 10:21:25 by wblondel    ###    #+. /#+    ###.fr     */
+/*   Updated: 2017/12/07 01:03:31 by wblondel    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -114,6 +114,7 @@ void				ft_swap(void *x, void *y, size_t bytes);
 void				ft_swap_c(char *a, char *b);
 void				ft_swap_i(int *a, int *b);
 char				*ft_strtrim(char const *s);
+char				*ft_strmerge(char *a, char *b);
 
 /*
 ** libft_lst.h

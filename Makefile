@@ -63,6 +63,7 @@ SRC = 	ft_abs.c\
 		ft_strlen.c\
 		ft_strmap.c\
 		ft_strmapi.c\
+		ft_strmerge.c\
 		ft_strncat.c\
 		ft_strncmp.c\
 		ft_strncpy.c\
