@@ -1,7 +1,29 @@
-#CC=gcc
-NAME=libft.a
-CFLAGS=-Wall -Wextra -Werror
-SRC = 	ft_abs.c\
+# **************************************************************************** #
+#                                                           LE - /             #
+#                                                               /              #
+#    Makefile                                         .::    .:/ .      .::    #
+#                                                  +:+:+   +:    +:  +:+:+     #
+#    By: wblondel <marvin@le-101.fr>                +:+   +:    +:    +:+      #
+#                                                  #+#   #+    #+    #+#       #
+#    Created: 2018/03/29 22:47:41 by wblondel     #+#   ##    ##    #+#        #
+#    Updated: 2018/03/29 23:02:27 by wblondel    ###    #+. /#+    ###.fr      #
+#                                                          /                   #
+#                                                         /                    #
+# **************************************************************************** #
+
+# Compiler configuration
+CC = gcc
+CFLAGS = -Wall -Wextra -Werror
+
+## Flags for the C preprocessor
+CPPFLAGS = -I$(INC_PATH)
+
+## Name of the library
+NAME = libft.a
+
+# Project related variables
+SRC_PATH = src
+SRC_NAME = 	ft_abs.c\
 		ft_atoi.c\
 		ft_bzero.c\
 		ft_factorial.c\
@@ -86,24 +108,43 @@ SRC = 	ft_abs.c\
 		ft_tolower.c\
 		ft_toupper.c
 
-OBJ = $(SRC:.c=.o)
+SRC = $(addprefix $(SRC_PATH)/,$(SRC_NAME))
 
+OBJ_PATH = obj
+OBJ_NAME = $(SRC_NAME:.c=.o)
+OBJ = $(addprefix $(OBJ_PATH)/,$(OBJ_NAME))
+
+INC_PATH = inc
+HEADER = $(INC_PATH)/libft.h
+
+# Entry point
+all: $(NAME)
+
+# Compiles libft
 $(NAME): $(OBJ)
 	ar rcs $(NAME) $(OBJ)
 
-%.o: %.c
-	$(CC) -I. -o $@ -c $? $(CFLAGS)
+# Creates obj/ directory
+# It's a prerequisite to compile any OBJ
+$(OBJ_PATH):
+	mkdir $@
 
-.PHONY: all
-all: $(NAME)
+# Adds the dependency to create the directory
+# before to compile an object
+$(OBJ): | $(OBJ_PATH)
+
+# Compiles all the src into obj
+$(OBJ_PATH)/%.o: $(SRC_PATH)/%.c $(HEADER)
+	$(CC) $(CFLAGS) $(CPPFLAGS) -c $< -o $@
 
 .PHONY: clean
 clean:
-	/bin/rm -f $(OBJ)
+	$(RM) -r $(OBJ_PATH)
 
 .PHONY: fclean
 fclean: clean
-	/bin/rm -f $(NAME)
+	$(RM) -r $(NAME) $(NAME).dSYM
 
 .PHONY: re
-re: fclean all
+re: fclean
+	$(MAKE) all
