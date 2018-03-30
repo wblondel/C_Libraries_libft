@@ -6,7 +6,7 @@
 #    By: wblondel <marvin@le-101.fr>                +:+   +:    +:    +:+      #
 #                                                  #+#   #+    #+    #+#       #
 #    Created: 2018/03/29 22:47:41 by wblondel     #+#   ##    ##    #+#        #
-#    Updated: 2018/03/30 02:35:42 by wblondel    ###    #+. /#+    ###.fr      #
+#    Updated: 2018/03/30 03:52:59 by wblondel    ###    #+. /#+    ###.fr      #
 #                                                          /                   #
 #                                                         /                    #
 # **************************************************************************** #
@@ -123,7 +123,9 @@ INC_NAME =\
 	basics/maths.h\
 	basics/memory.h\
 	basics/numbers.h\
-	basics/strings.h
+	basics/strings.h\
+	containers/list.h
+
 HEADER = $(addprefix $(INC_PATH)/,$(INC_NAME))
 
 # Entry point
