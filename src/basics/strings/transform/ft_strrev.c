@@ -11,7 +11,8 @@
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "basics/memory.h"
+#include "basics/strings.h"
 
 void	ft_strrev(char *str)
 {

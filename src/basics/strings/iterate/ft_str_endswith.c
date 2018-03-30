@@ -11,7 +11,7 @@
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "basics/strings.h"
 
 int		ft_str_endswith(char *s1, char *s2)
 {

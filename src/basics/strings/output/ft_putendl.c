@@ -11,7 +11,8 @@
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "basics/chars.h"
+#include "basics/strings.h"
 
 void	ft_putendl(char const *s)
 {

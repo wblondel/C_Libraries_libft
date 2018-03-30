@@ -6,7 +6,7 @@
 #    By: wblondel <marvin@le-101.fr>                +:+   +:    +:    +:+      #
 #                                                  #+#   #+    #+    #+#       #
 #    Created: 2018/03/29 22:47:41 by wblondel     #+#   ##    ##    #+#        #
-#    Updated: 2018/03/29 23:53:38 by wblondel    ###    #+. /#+    ###.fr      #
+#    Updated: 2018/03/30 02:35:42 by wblondel    ###    #+. /#+    ###.fr      #
 #                                                          /                   #
 #                                                         /                    #
 # **************************************************************************** #
@@ -40,6 +40,12 @@ SRC_NAME =\
     basics/chars/output/ft_putchar.c\
     basics/chars/transform/ft_tolower.c\
     basics/chars/transform/ft_toupper.c\
+    basics/maths/ft_abs.c\
+    basics/maths/ft_factorial.c\
+    basics/maths/ft_gcd.c\
+    basics/maths/ft_labs.c\
+    basics/maths/ft_lcm.c\
+    basics/maths/ft_sqrt.c\
     basics/memory/create/ft_memalloc.c\
     basics/memory/delete/ft_memdel.c\
     basics/memory/iterate/ft_memchr.c\
@@ -54,13 +60,7 @@ SRC_NAME =\
     basics/memory/transform/ft_swap.c\
     basics/numbers/convers/ft_atoi.c\
     basics/numbers/convers/ft_itoa.c\
-    basics/numbers/maths/ft_abs.c\
-    basics/numbers/maths/ft_factorial.c\
-    basics/numbers/maths/ft_gcd.c\
     basics/numbers/maths/ft_intlen.c\
-    basics/numbers/maths/ft_labs.c\
-    basics/numbers/maths/ft_lcm.c\
-    basics/numbers/maths/ft_sqrt.c\
     basics/numbers/output/integers/ft_putnbr_fd.c\
     basics/numbers/output/integers/ft_putnbr.c\
     basics/strings/create/ft_strdup.c\
@@ -117,7 +117,14 @@ OBJ = $(addprefix $(OBJ_PATH)/,$(OBJ_NAME))
 OBJS_DIRS = $(sort $(dir $(OBJ)))
 
 INC_PATH = inc
-HEADER = $(INC_PATH)/libft.h
+INC_NAME =\
+	basics/booleans.h\
+	basics/chars.h\
+	basics/maths.h\
+	basics/memory.h\
+	basics/numbers.h\
+	basics/strings.h
+HEADER = $(addprefix $(INC_PATH)/,$(INC_NAME))
 
 # Entry point
 all: $(NAME)

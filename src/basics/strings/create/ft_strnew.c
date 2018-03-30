@@ -11,7 +11,8 @@
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdlib.h>
+#include "basics/memory.h"
 
 char	*ft_strnew(size_t size)
 {

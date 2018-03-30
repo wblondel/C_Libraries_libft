@@ -11,7 +11,9 @@
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdlib.h>
+#include "basics/strings.h"
+#include "basics/memory.h"
 
 /*
 ** The strdup() function allocates sufficient memory for a copy of

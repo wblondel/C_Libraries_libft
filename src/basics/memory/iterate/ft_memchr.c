@@ -6,12 +6,12 @@
 /*   By: wblondel <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/12/01 10:20:46 by wblondel     #+#   ##    ##    #+#       */
-/*   Updated: 2017/12/01 10:20:46 by wblondel    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/03/30 02:49:01 by wblondel    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stddef.h>
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

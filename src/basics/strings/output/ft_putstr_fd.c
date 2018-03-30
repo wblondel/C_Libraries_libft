@@ -11,7 +11,7 @@
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "basics/chars.h"
 
 void	ft_putstr_fd(char const *s, int fd)
 {

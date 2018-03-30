@@ -6,12 +6,12 @@
 /*   By: wblondel <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/12/01 10:20:58 by wblondel     #+#   ##    ##    #+#       */
-/*   Updated: 2017/12/01 10:20:58 by wblondel    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/03/30 02:44:33 by wblondel    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "basics/chars.h"
 
 int		ft_toupper(int c)
 {

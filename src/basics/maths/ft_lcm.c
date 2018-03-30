@@ -1,26 +1,22 @@
 /* ************************************************************************** */
 /*                                                          LE - /            */
 /*                                                              /             */
-/*   ft_memcpy.c                                      .::    .:/ .      .::   */
+/*   ft_lcm.c                                         .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
 /*   By: wblondel <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2017/12/01 10:20:46 by wblondel     #+#   ##    ##    #+#       */
-/*   Updated: 2018/03/30 02:50:45 by wblondel    ###    #+. /#+    ###.fr     */
+/*   Created: 2017/12/01 10:20:44 by wblondel     #+#   ##    ##    #+#       */
+/*   Updated: 2017/12/01 10:20:44 by wblondel    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "basics/maths.h"
 
-void	*ft_memcpy(void *dst, const void *src, size_t n)
+long long int	ft_lcm(long long int m, long long int n)
 {
-	char		*dp;
-	const char	*sp;
-
-	dp = (char *)dst;
-	sp = (const char *)src;
-	while (n--)
-		*dp++ = *sp++;
-	return (dst);
+	if (m > n)
+		return ((m / ft_gcd(m, n)) * n);
+	else
+		return ((n / ft_gcd(m, n)) * m);
 }

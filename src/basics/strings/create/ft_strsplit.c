@@ -11,7 +11,8 @@
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdlib.h>
+#include "basics/strings.h"
 
 static char		*ft_word(const char *str, char c, int *i)
 {

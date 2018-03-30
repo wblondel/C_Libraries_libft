@@ -1,26 +1,26 @@
 /* ************************************************************************** */
 /*                                                          LE - /            */
 /*                                                              /             */
-/*   ft_memcpy.c                                      .::    .:/ .      .::   */
+/*   maths.h                                          .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
 /*   By: wblondel <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2017/12/01 10:20:46 by wblondel     #+#   ##    ##    #+#       */
-/*   Updated: 2018/03/30 02:50:45 by wblondel    ###    #+. /#+    ###.fr     */
+/*   Created: 2018/03/30 01:53:46 by wblondel     #+#   ##    ##    #+#       */
+/*   Updated: 2018/03/30 01:58:45 by wblondel    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#ifndef LIBFT_MATHS_H
+# define LIBFT_MATHS_H
 
-void	*ft_memcpy(void *dst, const void *src, size_t n)
-{
-	char		*dp;
-	const char	*sp;
+# include <stddef.h>
 
-	dp = (char *)dst;
-	sp = (const char *)src;
-	while (n--)
-		*dp++ = *sp++;
-	return (dst);
-}
+int				ft_abs(int n);
+int				ft_factorial(int n);
+long long int	ft_gcd(long long int m, long long int n);
+long int		ft_labs(long int n);
+long long int	ft_lcm(long long int m, long long int n);
+int				ft_sqrt(int n);
+
+#endif

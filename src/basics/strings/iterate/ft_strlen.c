@@ -11,7 +11,7 @@
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stddef.h>
 
 /*
 ** Returns the length of a string

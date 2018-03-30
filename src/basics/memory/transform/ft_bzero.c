@@ -6,12 +6,12 @@
 /*   By: wblondel <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/12/01 10:20:40 by wblondel     #+#   ##    ##    #+#       */
-/*   Updated: 2017/12/01 10:20:40 by wblondel    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/03/30 02:49:50 by wblondel    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "basics/memory.h"
 
 /*
 ** The bzero() function writes n zeroed bytes to the string s.

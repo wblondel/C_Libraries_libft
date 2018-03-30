@@ -6,12 +6,12 @@
 /*   By: wblondel <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/12/01 10:20:47 by wblondel     #+#   ##    ##    #+#       */
-/*   Updated: 2017/12/01 10:20:47 by wblondel    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/03/30 02:51:37 by wblondel    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "basics/memory.h"
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {

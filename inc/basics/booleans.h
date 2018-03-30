@@ -1,26 +1,34 @@
 /* ************************************************************************** */
 /*                                                          LE - /            */
 /*                                                              /             */
-/*   ft_memcpy.c                                      .::    .:/ .      .::   */
+/*   booleans.h                                       .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
 /*   By: wblondel <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2017/12/01 10:20:46 by wblondel     #+#   ##    ##    #+#       */
-/*   Updated: 2018/03/30 02:50:45 by wblondel    ###    #+. /#+    ###.fr     */
+/*   Created: 2018/03/30 01:13:38 by wblondel     #+#   ##    ##    #+#       */
+/*   Updated: 2018/03/30 01:59:22 by wblondel    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include <stddef.h>
+/*
+** @file			booleans.h
+** @brief			Booleans
+*/
 
-void	*ft_memcpy(void *dst, const void *src, size_t n)
+#ifndef LIBFT_BOOLEANS_H
+# define LIBFT_BOOLEANS_H
+
+/*
+** @typedef			t_bool
+** @brief			Boolean
+**
+** Boolean, which can be TRUE or FALSE
+*/
+typedef enum	e_bool
 {
-	char		*dp;
-	const char	*sp;
+	TRUE = 1,
+	FALSE = 0
+}				t_bool;
 
-	dp = (char *)dst;
-	sp = (const char *)src;
-	while (n--)
-		*dp++ = *sp++;
-	return (dst);
-}
+#endif

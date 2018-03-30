@@ -6,12 +6,12 @@
 /*   By: wblondel <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/12/01 10:20:39 by wblondel     #+#   ##    ##    #+#       */
-/*   Updated: 2017/12/01 10:20:39 by wblondel    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/03/30 02:58:33 by wblondel    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "basics/chars.h"
 
 /*
 ** The atoi() function converts the initial portion of the string pointed to

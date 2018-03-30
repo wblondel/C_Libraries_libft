@@ -11,7 +11,8 @@
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "basics/memory.h"
+#include "basics/strings.h"
 
 char			*ft_strndup(const char *str, size_t len)
 {

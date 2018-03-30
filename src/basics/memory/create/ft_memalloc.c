@@ -6,12 +6,13 @@
 /*   By: wblondel <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/12/01 10:20:45 by wblondel     #+#   ##    ##    #+#       */
-/*   Updated: 2017/12/01 10:20:45 by wblondel    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/03/30 02:47:31 by wblondel    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdlib.h>
+#include "basics/memory.h"
 
 void	*ft_memalloc(size_t size)
 {
