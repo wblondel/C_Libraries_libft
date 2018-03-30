@@ -6,7 +6,7 @@
 #    By: wblondel <marvin@le-101.fr>                +:+   +:    +:    +:+      #
 #                                                  #+#   #+    #+    #+#       #
 #    Created: 2018/03/29 22:47:41 by wblondel     #+#   ##    ##    #+#        #
-#    Updated: 2018/03/30 03:52:59 by wblondel    ###    #+. /#+    ###.fr      #
+#    Updated: 2018/03/30 07:27:00 by wblondel    ###    #+. /#+    ###.fr      #
 #                                                          /                   #
 #                                                         /                    #
 # **************************************************************************** #
@@ -107,7 +107,8 @@ SRC_NAME =\
     containers/list/ft_lstdelone.c\
     containers/list/ft_lstiter.c\
     containers/list/ft_lstmap.c\
-    containers/list/ft_lstnew.c
+    containers/list/ft_lstnew.c\
+	utils/file/ft_readline.c
 
 SRC = $(addprefix $(SRC_PATH)/,$(SRC_NAME))
 
