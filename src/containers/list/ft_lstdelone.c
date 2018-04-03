@@ -6,7 +6,7 @@
 /*   By: wblondel <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/12/01 10:20:44 by wblondel     #+#   ##    ##    #+#       */
-/*   Updated: 2017/12/01 10:20:44 by wblondel    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/04/03 17:45:04 by wblondel    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -16,7 +16,10 @@
 
 void	ft_lstdelone(t_list **alst, void (*del)(void *, size_t))
 {
-	del((*alst)->content, (*alst)->content_size);
-	free(*alst);
-	*alst = NULL;
+	if (del)
+	{
+		(*del)((*alst)->content, (*alst)->content_size);
+		free(*alst);
+		*alst = NULL;
+	}
 }
