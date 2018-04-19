@@ -12,7 +12,7 @@
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include "basics/memory.h"
+#include "libft/basics/memory.h"
 
 char	*ft_strnew(size_t size)
 {

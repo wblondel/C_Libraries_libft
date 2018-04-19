@@ -11,8 +11,8 @@
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include "basics/chars.h"
-#include "basics/strings.h"
+#include "libft/basics/chars.h"
+#include "libft/basics/strings.h"
 
 void	ft_putnbr(int n)
 {

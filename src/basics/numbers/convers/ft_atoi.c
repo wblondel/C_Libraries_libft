@@ -11,7 +11,7 @@
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include "basics/chars.h"
+#include "libft/basics/chars.h"
 
 /*
 ** The atoi() function converts the initial portion of the string pointed to

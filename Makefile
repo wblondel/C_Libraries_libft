@@ -6,7 +6,7 @@
 #    By: wblondel <marvin@le-101.fr>                +:+   +:    +:    +:+      #
 #                                                  #+#   #+    #+    #+#       #
 #    Created: 2018/03/29 22:47:41 by wblondel     #+#   ##    ##    #+#        #
-#    Updated: 2018/03/30 07:27:00 by wblondel    ###    #+. /#+    ###.fr      #
+#    Updated: 2018/04/19 18:13:17 by wblondel    ###    #+. /#+    ###.fr      #
 #                                                          /                   #
 #                                                         /                    #
 # **************************************************************************** #
@@ -119,13 +119,13 @@ OBJS_DIRS = $(sort $(dir $(OBJ)))
 
 INC_PATH = inc
 INC_NAME =\
-	basics/booleans.h\
-	basics/chars.h\
-	basics/maths.h\
-	basics/memory.h\
-	basics/numbers.h\
-	basics/strings.h\
-	containers/list.h
+	libft/basics/booleans.h\
+	libft/basics/chars.h\
+	libft/basics/maths.h\
+	libft/basics/memory.h\
+	libft/basics/numbers.h\
+	libft/basics/strings.h\
+	libft/containers/list.h
 
 HEADER = $(addprefix $(INC_PATH)/,$(INC_NAME))
 

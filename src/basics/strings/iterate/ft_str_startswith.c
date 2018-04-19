@@ -11,7 +11,7 @@
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include "basics/strings.h"
+#include "libft/basics/strings.h"
 
 int		ft_str_startswith(char *s1, char *s2)
 {

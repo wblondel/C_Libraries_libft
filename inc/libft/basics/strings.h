@@ -15,8 +15,8 @@
 # define LIBFT_STRINGS_H
 
 # include <stddef.h>
-# include "basics/booleans.h"
-# include "containers/list.h"
+# include "libft/basics/booleans.h"
+# include "libft/containers/list.h"
 
 char	*ft_strdup(const char *s1);
 char	*ft_strjoin(char const *s1, char const *s2);

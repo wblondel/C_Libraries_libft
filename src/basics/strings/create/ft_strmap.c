@@ -11,7 +11,7 @@
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include "basics/strings.h"
+#include "libft/basics/strings.h"
 
 char	*ft_strmap(char const *s, char (*f)(char))
 {

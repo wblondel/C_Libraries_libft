@@ -11,7 +11,7 @@
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include "basics/memory.h"
+#include "libft/basics/memory.h"
 
 /*
 ** The bzero() function writes n zeroed bytes to the string s.

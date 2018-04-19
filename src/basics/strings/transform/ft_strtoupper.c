@@ -11,7 +11,7 @@
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include "basics/chars.h"
+#include "libft/basics/chars.h"
 
 void	ft_strtoupper(char *s)
 {

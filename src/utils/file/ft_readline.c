@@ -13,9 +13,9 @@
 
 #include <stdlib.h>
 #include <unistd.h>
-#include "basics/strings.h"
-#include "containers/list.h"
-#include "utils/file.h"
+#include "libft/basics/strings.h"
+#include "libft/containers/list.h"
+#include "libft/utils/file.h"
 
 /*
 ** If there is already something in tmp, we find back the fd associated with

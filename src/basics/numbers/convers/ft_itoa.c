@@ -11,8 +11,8 @@
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include "basics/strings.h"
-#include "basics/numbers.h"
+#include "libft/basics/strings.h"
+#include "libft/basics/numbers.h"
 
 /*
 ** The itoa() function converts the integer pointed to

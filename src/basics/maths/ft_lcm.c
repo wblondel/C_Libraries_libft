@@ -11,7 +11,7 @@
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include "basics/maths.h"
+#include "libft/basics/maths.h"
 
 long long int	ft_lcm(long long int m, long long int n)
 {

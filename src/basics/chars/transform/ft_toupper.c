@@ -11,7 +11,7 @@
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include "basics/chars.h"
+#include "libft/basics/chars.h"
 
 int		ft_toupper(int c)
 {

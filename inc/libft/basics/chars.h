@@ -22,7 +22,7 @@
 # define LIBFT_CHARS_H
 
 # include <stddef.h>
-# include "basics/booleans.h"
+# include "libft/basics/booleans.h"
 
 int		ft_isalnum(int c);
 int		ft_isalpha(int c);

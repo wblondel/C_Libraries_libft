@@ -11,7 +11,7 @@
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include "basics/memory.h"
+#include "libft/basics/memory.h"
 
 void	ft_strdel(char **as)
 {

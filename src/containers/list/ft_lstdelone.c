@@ -12,7 +12,7 @@
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include "containers/list.h"
+#include "libft/containers/list.h"
 
 void	ft_lstdelone(t_list **alst, void (*del)(void *, size_t))
 {

@@ -11,7 +11,7 @@
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include "basics/strings.h"
+#include "libft/basics/strings.h"
 
 char			*ft_strnjoin(char const *s1, char const *s2, size_t len)
 {

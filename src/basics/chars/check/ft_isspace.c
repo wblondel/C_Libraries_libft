@@ -11,7 +11,7 @@
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include "basics/chars.h"
+#include "libft/basics/chars.h"
 
 /*
 ** Checks whether c is a white-space character.
