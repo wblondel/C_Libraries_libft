@@ -1,5 +1,4 @@
-
-# Created by https://www.gitignore.io/api/c,vim,macos,cmake,clion+iml
+# Created by https://www.gitignore.io/api/c,vim,macos,clion+iml
 
 ### C ###
 # Prerequisites
@@ -117,18 +116,6 @@ modules.xml
 .idea/misc.xml
 *.ipr
 
-### CMake ###
-CMakeCache.txt
-CMakeFiles
-CMakeScripts
-Testing
-Makefile
-cmake_install.cmake
-install_manifest.txt
-compile_commands.json
-CTestTestfile.cmake
-build
-
 ### macOS ###
 *.DS_Store
 .AppleDouble
@@ -169,4 +156,4 @@ Session.vim
 tags
 
 
-# End of https://www.gitignore.io/api/c,vim,macos,cmake,clion+iml
+# End of https://www.gitignore.io/api/c,vim,macos,clion+iml
