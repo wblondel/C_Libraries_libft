@@ -1,0 +1,10 @@
+language: c
+
+# Builds
+os:
+  - osx
+  - linux
+
+compiler:
+  - gcc
+  - clang
