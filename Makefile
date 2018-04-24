@@ -6,14 +6,14 @@
 #    By: wblondel <marvin@le-101.fr>                +:+   +:    +:    +:+      #
 #                                                  #+#   #+    #+    #+#       #
 #    Created: 2018/03/29 22:47:41 by wblondel     #+#   ##    ##    #+#        #
-#    Updated: 2018/04/19 18:13:17 by wblondel    ###    #+. /#+    ###.fr      #
+#    Updated: 2018/04/24 17:20:10 by wblondel    ###    #+. /#+    ###.fr      #
 #                                                          /                   #
 #                                                         /                    #
 # **************************************************************************** #
 
 # Compiler configuration
 CC = gcc
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -O2
 
 ## Flags for the C preprocessor
 CPPFLAGS = -I$(INC_PATH)
