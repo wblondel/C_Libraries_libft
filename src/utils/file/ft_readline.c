@@ -14,7 +14,6 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include "libft/basics/strings.h"
-#include "libft/containers/list.h"
 #include "libft/utils/file.h"
 
 /*
